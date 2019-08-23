@@ -1,0 +1,19 @@
+{
+    "carouselItems": [
+        {
+            "image": "../47.png",
+            "title": "Lorem ipsum",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "image": "../assets/cropped-hammer.jpg",
+            "title": "Lorem ipsum",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "image": "law-cropped.jpg",
+            "title": "Lorem ipsum",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ]
+}

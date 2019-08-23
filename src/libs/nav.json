@@ -1,0 +1,10 @@
+{
+  "navElems": [
+    { "home": "Головна" },
+    { "about": "Про нас" },
+    { "lawyers": "Юристи" },
+    { "service": "Послуги" },
+    { "partners": "Партнери" },
+    { "probono": "Pro Bono" }
+  ]
+}
