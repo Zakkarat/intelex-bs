@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import { BrowserRouter as Router } from "react-router-dom";
 import NavigationBar from './NavigationBar'
 import Presentation from './Presentation'
+import News from "./News";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <NavigationBar />
         <Container>
           <Presentation />
+          <News />
         </Container>
         {/* <Route path="/" exact component={Index} />
         <Route path="/about/" component={About} />

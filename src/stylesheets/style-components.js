@@ -15,7 +15,11 @@ export const NavStyles = styled.div`
 `
 
 export const CarouselStyles = styled.div`
-    .space-between-blocks {
-        margin-top: 60px;
+    .text-visible {
+        color: black;
+    }
+
+    .border-round {
+        border-radius: 25px;
     }
 `

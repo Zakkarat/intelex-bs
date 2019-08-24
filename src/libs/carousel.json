@@ -1,7 +1,7 @@
 {
     "carouselItems": [
         {
-            "image": "../47.png",
+            "image": "47.png",
             "title": "Lorem ipsum",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
