@@ -9,9 +9,9 @@ const Presentation = () => {
     <CarouselStyles>
       <Carousel className="mt-3">
         {carouselItems.map((item, i) => {
-          return <Carousel.Item >
+          return <Carousel.Item key={i}>
             <img
-              height={500}
+              height={300}
               className="d-block w-100 border-round"
               src={carouselImages[i]}
               alt="First slide"
