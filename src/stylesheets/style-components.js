@@ -49,3 +49,10 @@ export const TextBlockStyles = styled.div`
     font-weight: 350;
   }
 `
+export const MapStyles = styled.div`
+.map-cont {
+  width: '200px' !important,
+  height: '150px' !important,
+  'border-radius': '25px'
+}
+`

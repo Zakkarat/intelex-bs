@@ -9,7 +9,7 @@ import { navElems } from "../libs/nav.json";
 const NavigationBar = () => {
   return (
     <NavStyles>
-      <Navbar className="border-underlined" bg="white" expand="md">
+      <Navbar className="border-underlined" bg="white" expand="lg">
         <Container>
           <Navbar.Brand className="bigger-brand">Intelex</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -25,7 +25,7 @@ const Footer = () => {
               voluptatem sequi nesciunt.
             </p>
           </MDBCol>
-          <MDBCol  md="3" lg="4" xl="4" className="mb-4">
+          <MDBCol className="mb-4">
           <h6 className="text-uppercase font-weight-bold">
               <strong>How to find us?</strong>
             </h6>

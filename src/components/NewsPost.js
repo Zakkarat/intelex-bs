@@ -1,33 +1,37 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 
-const NewsPost = () => {
-  return (
-    <Card className='mb-4 border-round'>
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          “Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-          eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est,
-          qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit,
-          sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et
-          dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-          quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-          ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-          reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
-          consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla
-          pariatur?
-        </Card.Text>
-        <Card.Link className="offset-md-10" href="#">
-          Детальніше
-        </Card.Link>
-      </Card.Body>
-    </Card>
-  );
+const NewsPost = (props) => {
+  return (<>
+    <hr className="mb-5" />
+    <div className="row wow fadeIn">
+      <div className="col-lg-5 col-xl-4 mb-4">
+        <div className="view overlay rounded z-depth-1-half">
+          <div className="view overlay">
+            <div className="embed-responsive embed-responsive-16by9">
+              <img className="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+        <h3 className="mb-3 font-weight-bold dark-grey-text">
+          <strong>MDB Quick Start</strong>
+        </h3>
+        <p className="grey-text">Get started with MDBootstrap, the world's most popular Material Design framework for building responsive,
+        mobile-first sites.</p>
+        <p>
+          <strong>5 minutes, a few clicks and... done. You will be surprised at how easy it is.</strong>
+        </p>
+        <a href="https://www.youtube.com/watch?v=cXTThxoywNQ" target="_blank" className="btn btn-primary btn-md">Start tutorial
+        <i className="fas fa-play ml-2"></i>
+        </a>
+      </div>
+
+
+    </div>
+  </>
+  )
 };
 
 export default NewsPost;
