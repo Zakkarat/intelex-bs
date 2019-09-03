@@ -7,6 +7,7 @@ import NavigationBar from './NavigationBar'
 import Presentation from './Presentation'
 import News from "./News";
 import About from "./About";
+import LawyerCards from "./LawyerCards"
 import Footer from "./Footer";
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" exact component={News} />
         <Route path="/home" component={News} />
         <Route path="/about" component={About} />
+        <Route path="/lawyers" component={LawyerCards} />
         </Container>
 
         <Footer>

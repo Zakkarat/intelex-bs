@@ -1,22 +1,33 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol} from 'mdbreact';
 
-const CardExample = () => {
+const Card = () => {
     return (
-        <MDBCol>
-            <MDBCard style={{ width: "22rem" }}>
-                <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
-                <MDBCardBody>
-                    <h4 className="font-weight-bold mb-3">Marie Johnson</h4>
-                    <MDBCardText>
-                        Some quick example text to build on the card title and make
-                        up the bulk of the card&apos;s content.
-          </MDBCardText>
-                    <MDBBtn href="#">MDBBtn</MDBBtn>
-                </MDBCardBody>
-            </MDBCard>
-        </MDBCol>
+<MDBCol md='4'className="mt-4 mb-4">
+        <MDBCard>
+          <MDBCardImage
+            hover
+            overlay='white-light'
+            className='card-img-top'
+            src='https://mdbootstrap.com/img/Photos/Others/men.jpg'
+            alt='man'
+          />
+
+          <MDBCardBody cascade className='text-center'>
+            <MDBCardTitle className='card-title'>
+              <strong>Billy Coleman</strong>
+            </MDBCardTitle>
+
+            <p className='font-weight-bold blue-text'>Wev developer</p>
+
+            <MDBCardText>
+              Sed ut perspiciatis unde omnis iste natus sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.{' '}
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
     )
 }
 
-export default CardExample;
+export default Card;

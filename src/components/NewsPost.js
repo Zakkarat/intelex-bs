@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const NewsPost = (props) => {
   return (<>
-    <hr className="mb-5" />
+    <hr className="mb-4" />
     <div className="row wow fadeIn">
       <div className="col-lg-5 col-xl-4 mb-4">
         <div className="view overlay rounded z-depth-1-half">

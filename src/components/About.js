@@ -6,9 +6,10 @@ const About = () => {
   return (
     <TextBlockStyles>
       <div className="text-center">
-        <h1 className="">Про нас</h1>
+      <h2 class="text-center mt-3">Про нас</h2>
+      <hr className="mb-4" />
       </div>
-      <div>
+      <div className="mb-5">
           {aboutText.map(text => (<p className="para-styled">{text}</p>))}
       </div>
     </TextBlockStyles>
