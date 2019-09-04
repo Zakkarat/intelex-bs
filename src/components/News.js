@@ -10,7 +10,6 @@ const News = () => {
       <NewsPost />
       <NewsPost />
       <NewsPost />
-      <NewsPost />
     </NewsStyles>
   );
 };

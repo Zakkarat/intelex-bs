@@ -2,7 +2,8 @@
   "name": "intelex-bs",
   "version": "0.1.0",
   "proxy": "http://localhost:8080",
-  "private": true,
+  "private": false,
+  "homepage": "https://zakkarat.github.io/intelex-bs/",
   "dependencies": {
     "@okta/oidc-middleware": "^1.0.2",
     "body-parser": "^1.19.0",
@@ -59,6 +60,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zakkarat/intelex-bs/issues"
-  },
-  "homepage": "https://github.com/Zakkarat/intelex-bs#readme"
+  }
 }
