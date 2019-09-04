@@ -16,15 +16,13 @@ const NewsPost = (props) => {
       </div>
       <div className="col-lg-7 col-xl-7 ml-xl-4 mb-4">
         <h3 className="mb-3 font-weight-bold dark-grey-text">
-          <strong>MDB Quick Start</strong>
+          <strong>Lorem ipsum</strong>
         </h3>
-        <p className="grey-text">Get started with MDBootstrap, the world's most popular Material Design framework for building responsive,
-        mobile-first sites.</p>
+        <p className="grey-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt..</p>
         <p>
-          <strong>5 minutes, a few clicks and... done. You will be surprised at how easy it is.</strong>
+          <strong>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur</strong>
         </p>
-        <a href="https://www.youtube.com/watch?v=cXTThxoywNQ" target="_blank" className="btn btn-primary btn-md">Start tutorial
-        <i className="fas fa-play ml-2"></i>
+        <a href="home" className="btn btn-primary btn-md float-right">Детальніше
         </a>
       </div>
 

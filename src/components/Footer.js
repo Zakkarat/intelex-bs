@@ -25,7 +25,7 @@ const Footer = () => {
               voluptatem sequi nesciunt.
             </p>
           </MDBCol>
-          <MDBCol className="mb-4">
+          <MDBCol md="6" lg="3" xl="3" className="mb-4">
           <h6 className="text-uppercase font-weight-bold">
               <strong>How to find us?</strong>
             </h6>
@@ -47,13 +47,10 @@ const Footer = () => {
               <i className="fa fa-home mr-3" /> Ivano-Frankivsk, UA
             </p>
             <p>
-              <i className="fa fa-envelope mr-3" /> info@example.com
+              <i className="fa fa-envelope mr-3" /> office@intelex.org.ua
             </p>
             <p>
-              <i className="fa fa-phone mr-3" /> + 01 234 567 88
-            </p>
-            <p>
-              <i className="fa fa-print mr-3" /> + 01 234 567 89
+              <i className="fa fa-phone mr-3" /> +38 0342 506-110
             </p>
           </MDBCol>
         </MDBRow>

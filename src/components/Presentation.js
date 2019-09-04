@@ -10,13 +10,16 @@ const Presentation = () => {
       <Carousel className="mt-3">
         {carouselItems.map((item, i) => {
           return <Carousel.Item key={i}>
+            <div className="view">
             <img
               height={300}
               className="d-block w-100 border-round"
               src={carouselImages[i]}
               alt="First slide"
             />
-            <Carousel.Caption className="text-visible">
+            <div className="mask rgba-black-light border-round"></div>
+            </div>
+            <Carousel.Caption className="">
               <h2>First slide label</h2>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
