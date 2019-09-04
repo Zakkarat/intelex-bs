@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c8452155b482afefac625f0af2da40f",
+    "revision": "69a4ae167e05e2bd1cd03107f80a2122",
     "url": "/Zakkarat/intelex-bs/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Zakkarat/intelex-bs/static/css/2.9f0dff56.chunk.css"
   },
   {
-    "revision": "74271f68f401ed501065",
+    "revision": "5be5bfd643414f698493",
     "url": "/Zakkarat/intelex-bs/static/css/main.141380ff.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Zakkarat/intelex-bs/static/js/2.19bfa3f3.chunk.js"
   },
   {
-    "revision": "74271f68f401ed501065",
-    "url": "/Zakkarat/intelex-bs/static/js/main.e263d84d.chunk.js"
+    "revision": "5be5bfd643414f698493",
+    "url": "/Zakkarat/intelex-bs/static/js/main.a1c772c2.chunk.js"
   },
   {
     "revision": "5418fd22ba35bead9d43",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Zakkarat/intelex-bs/precache-manifest.001c1d50060509c65509631f0d301f77.js"
+  "/Zakkarat/intelex-bs/precache-manifest.a97d98eb837722ce9fa7203e2916c544.js"
 );
 
 self.addEventListener('message', (event) => {
