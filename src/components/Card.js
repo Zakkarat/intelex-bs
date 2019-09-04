@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol} from 'mdbreact';
 
-const Card = () => {
+const Card = ({name, position, characteristics, speciality, email, avatar}) => {
     return (
 <MDBCol md='4'className="mt-4 mb-4">
         <MDBCard>
@@ -15,15 +15,17 @@ const Card = () => {
 
           <MDBCardBody cascade className='text-center'>
             <MDBCardTitle className='card-title'>
-              <strong>Billy Coleman</strong>
+              <strong>{name}</strong>
             </MDBCardTitle>
 
-            <p className='font-weight-bold blue-text'>Wev developer</p>
-
+            <p className='font-weight-bold blue-text'>{position}</p>
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.{' '}
+              {characteristics}
             </MDBCardText>
+            <MDBCardText>
+              {speciality}
+            </MDBCardText>
+            <MDBCardText className='font-weight-bold blue-text'>{email}</MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
