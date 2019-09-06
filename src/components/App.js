@@ -10,6 +10,7 @@ import About from "./About";
 import LawyerCards from "./LawyerCards"
 import Footer from "./Footer";
 import Probono from "./Probono"
+import Services from "./Services"
 const App = () => {
   return (
       <Router>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/home" component={News} />
         <Route path="/about" component={About} />
         <Route path="/lawyers" component={LawyerCards} />
+        <Route path="/service" component={Services} />
         <Route path="/probono" component={Probono} />
         </Container>
 
