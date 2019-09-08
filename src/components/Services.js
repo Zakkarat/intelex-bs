@@ -1,129 +1,55 @@
-import React from 'react';
+import React, {Component} from "react";
 import {
-    MDBContainer,
-    MDBCollapse,
-    MDBCard,
-    MDBCardBody,
-    MDBCollapseHeader,
-    MDBIcon,
-  } from 'mdbreact';
+  MDBContainer,
+  MDBCollapse,
+  MDBCardBody,
+  MDBIcon,
+  MDBCardHeader
+} from "mdbreact";
+import {services} from "../libs/services"
 
-const Services = () => {
-    return (
-        <MDBContainer>
-        <MDBContainer
-          className='accordion md-accordion accordion-3 z-depth-1-half'
-        >
-          <MDBCard>
-            <MDBCollapseHeader
-              onClick={this.toggleCollapse('collapse1')}
-              tag='h3'
-              tagClassName='red-text d-flex justify-content-between align-items-center'
-            >
-              How awesome accordion I am?
-              <MDBIcon
-                icon={
-                  this.state.collapseID === 'collapse1'
-                    ? 'angle-up'
-                    : 'angle-down'
-                }
-                className='red-text'
-                size='2x'
-              />
-            </MDBCollapseHeader>
-            <MDBCollapse id='collapse1' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </p>
-              </MDBCardBody>
-            </MDBCollapse>
-          </MDBCard>
+class Services extends Component {
+  state = {
+    collapseID: 'collapse1'
+  };
 
-          <MDBCard>
-            <MDBCollapseHeader
-              onClick={this.toggleCollapse('collapse2')}
-              tag='h3'
-              tagClassName='red-text d-flex justify-content-between align-items-center'
-            >
-              You're the greatest accordion!
-              <MDBIcon
-                icon={
-                  this.state.collapseID === 'collapse2'
-                    ? 'angle-up'
-                    : 'angle-down'
-                }
-                className='red-text'
-                size='2x'
-              />
-            </MDBCollapseHeader>
-            <MDBCollapse id='collapse2' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </p>
-              </MDBCardBody>
-            </MDBCollapse>
-          </MDBCard>
+  toggleCollapse = collapseID => () =>
+    this.setState(prevState => ({
+      collapseID: prevState.collapseID !== collapseID ? collapseID : ''
+    }));
 
-          <MDBCard>
-            <MDBCollapseHeader
-              onClick={this.toggleCollapse('collapse3')}
-              tag='h3'
-              tagClassName='red-text d-flex justify-content-between align-items-center'
-            >
-              Thank you my dear!
-              <MDBIcon
-                icon={
-                  this.state.collapseID === 'collapse3'
-                    ? 'angle-up'
-                    : 'angle-down'
-                }
-                className='red-text'
-                size='2x'
-              />
-            </MDBCollapseHeader>
-            <MDBCollapse id='collapse3' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </p>
-              </MDBCardBody>
-            </MDBCollapse>
-          </MDBCard>
-        </MDBContainer>
-      </MDBContainer>
-    );
+  render() {
+    return (<div className="mt-4 mb-4">
+            <div className="text-center">
+      <h2 class="text-center mt-3">Послуги</h2>
+      <hr className="mb-4" />
+      </div>
+      {services.map((elem, i) => (<MDBContainer className="accordion md-accordion accordion-1">
+          <MDBCardHeader
+            onClick={this.toggleCollapse(`collapse${i + 1}`)}
+            tag="h4"
+            tagClassName="red-text d-flex justify-content-between align-items-center"
+          >
+            {elem.name}
+            <MDBIcon
+              icon={
+                this.state.collapseID === `collapse${i + 1}`
+                  ? "angle-up"
+                  : "angle-down"
+              }
+              className="grey-text pl-2"
+              size="2x"
+            />
+          </MDBCardHeader>
+          <MDBCollapse id={`collapse${i + 1}`} isOpen={this.state.collapseID}>
+            <MDBCardBody class="pt-0">
+              <ul>
+                {elem.list.map(service => (<li>{service}</li>))}
+              </ul>
+            </MDBCardBody>
+          </MDBCollapse>
+      </MDBContainer>))}
+    </div>);
+};
 }
-
-export default Services
+export default Services;

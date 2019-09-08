@@ -8,7 +8,7 @@ const { ExpressOIDC } = require('@okta/oidc-middleware');
 const Sequelize = require('sequelize');
 const epilogue = require('epilogue'), ForbiddenError = epilogue.Errors.ForbiddenError;
 const app = express();
-const port = 3000;
+const port = 9000;
 
 // session support is required to use ExpressOIDC
 app.use(session({
@@ -36,15 +36,15 @@ app.use(oidc.router);
 
 app.use(cors());
 app.use(bodyParser.json());
-
+app.use(express.static(path.join(__dirname, 'api-public')));
 
 app.get('/home', (req, res) => {
-    res.send('<h1>Welcome!!</h1><a href="/login">Login</a>');
-});
+    res.sendFile(path.join(__dirname, './api-public/home.html'));
+ });
 
-app.get('/admin', oidc.ensureAuthenticated(), (req, res) => {
-    res.send('Admin page');
-});
+ app.get('/admin', oidc.ensureAuthenticated(), (req, res) => {
+    res.sendFile(path.join(__dirname, './api-public/admin.html'));
+ });
 
 app.get('/logout', (req, res) => {
   req.logout();
@@ -58,7 +58,6 @@ app.get('/', (req, res) => {
 const database = new Sequelize({
     dialect: 'sqlite',
     storage: './db.sqlite',
-    operatorsAliases: false,
 });
 
 const Post = database.define('posts', {
