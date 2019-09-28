@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1172a1d6da03cc6e7f8cfee27e9d966",
+    "revision": "2ee01ee5acdecd608de8d51bb8258de1",
     "url": "/intelex-bs/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/intelex-bs/static/css/2.59c64be7.chunk.css"
   },
   {
-    "revision": "3e0fef7be03293f68202",
+    "revision": "582bd64800e92d6eb6b1",
     "url": "/intelex-bs/static/css/main.141380ff.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/intelex-bs/static/js/2.7cd8c9d2.chunk.js"
   },
   {
-    "revision": "3e0fef7be03293f68202",
-    "url": "/intelex-bs/static/js/main.cb6de423.chunk.js"
+    "revision": "582bd64800e92d6eb6b1",
+    "url": "/intelex-bs/static/js/main.329006f4.chunk.js"
   },
   {
     "revision": "06125d6940e51975a592",
