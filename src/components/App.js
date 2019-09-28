@@ -3,32 +3,30 @@ import "../stylesheets/App.css";
 import "../stylesheets/normalize.css";
 import Container from "react-bootstrap/Container";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import NavigationBar from './NavigationBar'
-import Presentation from './Presentation'
+import NavigationBar from "./NavigationBar";
+import Presentation from "./Presentation";
 import News from "./News";
 import About from "./About";
-import LawyerCards from "./LawyerCards"
+import LawyerCards from "./LawyerCards";
 import Footer from "./Footer";
-import Probono from "./Probono"
-import Services from "./Services"
+import Probono from "./Probono";
+import Services from "./Services";
 const App = () => {
   return (
-      <Router>
-        <NavigationBar />
-        <Container>
-          <Presentation />
-        <Route path="/" exact component={News} />
-        <Route path="/home" component={News} />
+    <Router>
+      <NavigationBar />
+      <Container>
+        <Presentation />
+        <Route path="/" component={News} />
+        <Route exact path="/home" component={News} />
         <Route path="/about" component={About} />
         <Route path="/lawyers" component={LawyerCards} />
         <Route path="/service" component={Services} />
         <Route path="/probono" component={Probono} />
-        </Container>
+      </Container>
 
-        <Footer>
-
-        </Footer>
-      </Router>
+      <Footer></Footer>
+    </Router>
   );
 };
 

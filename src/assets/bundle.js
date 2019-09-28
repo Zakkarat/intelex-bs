@@ -1,4 +1,4 @@
-import image1 from "./611-cropped.jpg"
+import image1 from "./clipboard.jpg"
 import image2 from "./cropped-hammer.jpg"
 import image3 from "./law-cropped.jpg"
 
