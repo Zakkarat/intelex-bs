@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea05ca0cf16b1fb08f7da42defa765d7",
+    "revision": "1e94c3835cc3e3eaf36143bb4aef071c",
     "url": "/intelex-bs/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/intelex-bs/static/css/2.59c64be7.chunk.css"
   },
   {
-    "revision": "82cdbf7edc4c02a81460",
+    "revision": "25f1bac121bbd312c90b",
     "url": "/intelex-bs/static/css/main.141380ff.chunk.css"
   },
   {
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/intelex-bs/static/js/2.7cd8c9d2.chunk.js"
   },
   {
-    "revision": "82cdbf7edc4c02a81460",
-    "url": "/intelex-bs/static/js/main.72764f54.chunk.js"
+    "revision": "25f1bac121bbd312c90b",
+    "url": "/intelex-bs/static/js/main.8ca653c9.chunk.js"
   },
   {
     "revision": "06125d6940e51975a592",
     "url": "/intelex-bs/static/js/runtime~main.db74dc4d.js"
-  },
-  {
-    "revision": "4f3d298b033246cbd94bbc8e77e8e14b",
-    "url": "/intelex-bs/static/media/611-cropped.4f3d298b.jpg"
   },
   {
     "revision": "39b2c3031be6b4ea96e2e3e95d307814",
@@ -114,6 +110,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8ef6a08cdc1154920165680a4edde771",
     "url": "/intelex-bs/static/media/arrow_right.8ef6a08c.svg"
+  },
+  {
+    "revision": "06f84348ab53612f3b19daf57692966d",
+    "url": "/intelex-bs/static/media/clipboard.06f84348.jpg"
   },
   {
     "revision": "694f846b71261563d46fcd144ce6ca04",
